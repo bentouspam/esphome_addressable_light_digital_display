@@ -75,7 +75,7 @@ async def register_display(config, internal_light, display_var):
             return_type=cg.void,
         )
         cg.add(display_var.set_writer(lambda_))
-    //await display.register_display(display_var, config)
+
     await cg.register_component(display_var, config)
 
 
